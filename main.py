@@ -213,7 +213,8 @@ def welcome_users() -> None:
         twilio.sms(phone=phone, content=welcome_message)
 
 
-
+me = profiles.search("Ibrahim Ellahi")
+twilio.sms(phone=me['phone'], content="App Deployed")
 
 async def main() -> None:
 
