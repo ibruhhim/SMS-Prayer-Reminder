@@ -225,6 +225,8 @@ async def main() -> None:
 
     await asyncio.gather(*tasks)
 
+me = profiles.search("Ibrahim Ellahi")
+twilio.sms(phone=me['phone'], content="App Deployed")
 
 if __name__ == "__main__":
     asyncio.run(main())
