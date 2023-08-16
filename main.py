@@ -167,9 +167,9 @@ def remind_prayer() -> None:
 
                 city = location.split(', ')[0]
 
-                message = f"""Asalamalaiykum, {first_name}!\n Just a friendly reminder that it is time for {prayer} in {city} ({pholders[t_str[0]]}{t_time[0]}:{pholders[t_str[1]]}{t_time[1]}).\nPlease perform wudhu and make Ibadat to Allah SWT, he's calling upon you as of right now. A Muslim is not defined solely by their beliefs; rather, their identity as a Muslim is also shaped by their actions. To truly be a Muslim, it is essential to embrace both faith and deeds."""
+                message = f"""Asalamalaiykum, {first_name}!\n Just a friendly reminder that it is time for {prayer} in {city} ({pholders[t_str[0]]}{t_time[0]}:{pholders[t_str[1]]}{t_time[1]}).\n\nPlease perform wudhu and make Ibadat to Allah SWT, he's calling upon you as of right now. A Muslim is not defined solely by their beliefs; rather, their identity as a Muslim is also shaped by their actions. To truly be a Muslim, it is essential to embrace both faith and deeds."""
 
-                benefits = f'\nWhy? -> {choice(islamic_data["prayer"])}'
+                benefits = f'\n\nWhy? -> {choice(islamic_data["prayer"])}'
                 
 
                 twilio.sms(phone=phone, content=message+benefits, message_type='Reminder')
