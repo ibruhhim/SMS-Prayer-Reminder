@@ -27,7 +27,7 @@ class Prayer_API:
         
     def get_prayer_times(self, location: str) -> str:
 
-        #Retrivies prayer timings from the API and returns them as datetime objects
+        #Retrieves prayer timings from the API and returns them as datetime objects
         times = self.get_all_times(location)
         j_data = self.api_request(times.year, times.month, location)
 
