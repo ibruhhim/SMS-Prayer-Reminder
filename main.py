@@ -138,14 +138,6 @@ def remind_prayer() -> None:
 
     all_profiles = profiles.get()
     for name in all_profiles:
-        
-
-
-        if name != "Ibrahim Ellahi":
-            continue
-
-
-
 
         profile = all_profiles[name]
         phone = profile['phone']
@@ -214,7 +206,7 @@ def welcome_users() -> None:
 
 
 me = profiles.search("Ibrahim Ellahi")
-twilio.sms(phone=me['phone'], content="App Deployed")
+twilio.sms(phone=me['phone'], content="Hey Ibrahim! The App Restarted.")
 
 async def main() -> None:
 
