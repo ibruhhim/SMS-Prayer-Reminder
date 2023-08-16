@@ -188,7 +188,6 @@ def welcome_users() -> None:
         profile = all_profiles[name]
         phone = profile['phone']
 
-        welcome_message = 
         welcome_message = f"""Hi {first_name}, you're one of the users who've been added to Ibrahim's Islamic Reminders!\nAs we move forward, the introduction of new features may be a possiblity. For now, you can expect to receive prayer reminders based on your profile's location and interesting Islamic Facts. Please note that this project is in its initial stages, and testing will persist as we refine its functionality. Let us collectively strive to expand our knowledge and evolve into the finest versions of ourselves. This application serves as a conduit for us to forge a deeper connection with our Creator and enhance our journey as devout Muslims. It is important to acknowledge that perfection eludes us all, and our shared pursuit is not without its challenges. With this understanding, we embark on a path of continuous improvement, nurturing our spiritual growth and aligning ourselves with the teachings of Islam. Let the purpose of this platform be a source of inspiration, urging us to pursue excellence while recognizing the inherent imperfections that make us human. \nThank you for your time. \n(Report Any Bugs at @ibra.himo on Discord) \nMissed reminders will most likely be a result of downtime and app maintenance."""
         twilio.sms(phone=phone, content=welcome_message)
 
