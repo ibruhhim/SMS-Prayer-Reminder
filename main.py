@@ -170,13 +170,7 @@ def remind_prayer() -> None:
                 #Place holders for single digit numbers for example 4, 5 => 04:05
                 pholders = {True: '0', False: ''}
 
-                message = f"""
-                Salam, {first_name}!\n
-                Just a friendly reminder that it is time for {prayer} ({pholders[t_str[0]]}{t_time[0]}:{pholders[t_str[1]]}{t_time[1]}).
-                Please perform wudhu and make Ibadat to Allah SWT, he's calling upon you as of right now.
-                A Muslim is not defined solely by their beliefs; rather, their identity as a Muslim is also shaped by their actions. 
-                To truly be a Muslim, it is essential to embrace both faith and deeds.
-            """
+                message = f"""Salam, {first_name}!\n Just a friendly reminder that it is time for {prayer} ({pholders[t_str[0]]}{t_time[0]}:{pholders[t_str[1]]}{t_time[1]}).\nPlease perform wudhu and make Ibadat to Allah SWT, he's calling upon you as of right now. A Muslim is not defined solely by their beliefs; rather, their identity as a Muslim is also shaped by their actions. To truly be a Muslim, it is essential to embrace both faith and deeds."""
 
                 benefits = f'\nWhy? -> {choice(islamic_data["prayer"])}'
                 
@@ -194,19 +188,14 @@ def welcome_users() -> None:
         profile = all_profiles[name]
         phone = profile['phone']
 
-        welcome_message = f"""
-        Hi {first_name}, you're one of the users who've been added to Ibrahim's Islamic Reminders!
-        As we move forward, the introduction of new features may be a possiblity. For now, you can expect to receive prayer reminders based on your profile's location and interesting Islamic Facts. 
-        Please note that this project is in its initial stages, and testing will persist as we refine its functionality.
-        Let us collectively strive to expand our knowledge and evolve into the finest versions of ourselves. This application serves as a conduit for us to forge a deeper connection with our Creator and enhance our journey as devout Muslims. It is important to acknowledge that perfection eludes us all, and our shared pursuit is not without its challenges. With this understanding, we embark on a path of continuous improvement, nurturing our spiritual growth and aligning ourselves with the teachings of Islam. Let the purpose of this platform be a source of inspiration, urging us to pursue excellence while recognizing the inherent imperfections that make us human.
-        Thank you for your time.
-        (Report Any Bugs at @ibra.himo on Discord)
-        """
+        welcome_message = 
+        welcome_message = f"""Hi {first_name}, you're one of the users who've been added to Ibrahim's Islamic Reminders!\nAs we move forward, the introduction of new features may be a possiblity. For now, you can expect to receive prayer reminders based on your profile's location and interesting Islamic Facts. Please note that this project is in its initial stages, and testing will persist as we refine its functionality. Let us collectively strive to expand our knowledge and evolve into the finest versions of ourselves. This application serves as a conduit for us to forge a deeper connection with our Creator and enhance our journey as devout Muslims. It is important to acknowledge that perfection eludes us all, and our shared pursuit is not without its challenges. With this understanding, we embark on a path of continuous improvement, nurturing our spiritual growth and aligning ourselves with the teachings of Islam. Let the purpose of this platform be a source of inspiration, urging us to pursue excellence while recognizing the inherent imperfections that make us human. \nThank you for your time. \n(Report Any Bugs at @ibra.himo on Discord) \nMissed reminders will most likely be a result of downtime and app maintenance."""
         twilio.sms(phone=phone, content=welcome_message)
 
 
 me = profiles.search("Ibrahim Ellahi")
 twilio.sms(phone=me['phone'], content="Hey Ibrahim! The App Restarted.")
+welcome_users()
 
 async def main() -> None:
 
