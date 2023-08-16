@@ -42,7 +42,7 @@ class Twilio:
             "You got this!"
         ]
 
-        self.author = "\n - Ibrahim's Islamic Reminder"
+        self.author = "\n\n - Ibrahim's Islamic Reminder"
         self.limit_user_reminders = {}
 
     def limit_reminders(self, phone: str, message_type: str) -> bool:
