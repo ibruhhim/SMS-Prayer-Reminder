@@ -175,9 +175,9 @@ def remind_prayer() -> None:
                 twilio.sms(phone=phone, content=message+benefits, message_type='Reminder')
 
 
-def welcome_users() -> None:
+def welcome_users(users: list) -> None:
 
-    all_profiles = profiles.get()
+    all_profiles = {user: profiles.search(user) for user in users}
 
     for name in all_profiles:
 
@@ -190,10 +190,21 @@ def welcome_users() -> None:
         twilio.sms(phone=phone, content=welcome_message+disclaimer)
 
 
+def announce(message: str) -> None:
+
+    all_profiles = profiles.get()
+    for name in all_profiles:
+
+        profile = all_profiles[name]
+        phone = profile['phone']
+
+        twilio.sms(phone=phone, content=message)
+
+
 
 me = profiles.search("Ibrahim Ellahi")
 twilio.sms(phone=me['phone'], content="Hey Ibrahim! The App Restarted.")
-welcome_users()
+
 
 async def main() -> None:
 
