@@ -52,7 +52,7 @@ class Twilio:
         if message_type != 'Reminder':
             return
         
-        limit_seconds = 70
+        limit_seconds = 60
         limit = False
         current_time = time()
 
