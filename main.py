@@ -47,12 +47,12 @@ class Twilio:
 
     def limit_reminders(self, phone: str, message_type: str) -> bool:
 
-        #Adds a 70 second cooldown between reminder sms messages
+        #Adds a 2 minute cooldown between reminder sms messages
 
         if message_type != 'Reminder':
             return
         
-        limit_seconds = 60
+        limit_seconds = 120
         limit = False
         current_time = time()
 
