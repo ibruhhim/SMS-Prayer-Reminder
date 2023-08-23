@@ -27,7 +27,7 @@ islamic_data = utils.grab_file_data('data/islam.json')
 class Twilio:
     def __init__(self, phone: str, token: str, sid: str) -> None:
 
-        self.phone = phone
+        self.phone = getenv(phone)
         self.auth_token = getenv(token)
         self.account_sid = getenv(sid)
         self.client = Client(self.account_sid, self.auth_token)
@@ -88,8 +88,8 @@ class Twilio:
          )
         
 
+twilio = Twilio(phone='TWILIO_PHONE_NUMBER', token="TWILIO_AUTH_TOKEN", sid="TWILIO_ACCOUNT_SID")
 
-twilio = Twilio(phone='+12512443133', token="TWILIO_AUTH_TOKEN", sid="TWILIO_ACCOUNT_SID")
 
 @utils.loop_command(seconds=60*60*12)
 def islamic_fact() -> None:
