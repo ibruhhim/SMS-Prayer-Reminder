@@ -14,7 +14,7 @@ SMS-Prayer-Reminder is a Python program that notifies users of Islamic prayer ti
     pip install -r requirements.txt
     ```
 
-3. Set up your Twilio API credentials. Open `main.py` and replace the following placeholders with your Twilio account details:
+3. Set up your Twilio API credentials. Open `.env` and replace the following placeholders with your Twilio account details:
 
     ```python
     # Twilio API Credentials
