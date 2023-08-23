@@ -88,7 +88,7 @@ class Twilio:
          )
         
 
-twilio = Twilio(phone='TWILIO_PHONE_NUMBER', token="TWILIO_AUTH_TOKEN", sid="TWILIO_ACCOUNT_SID")
+twilio = Twilio(phone="TWILIO_PHONE_NUMBER", token="TWILIO_AUTH_TOKEN", sid="TWILIO_ACCOUNT_SID")
 
 
 @utils.loop_command(seconds=60*60*12)
