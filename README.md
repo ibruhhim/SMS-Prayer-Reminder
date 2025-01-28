@@ -1,6 +1,6 @@
 # SMS-Prayer-Reminder
 
-<img src="https://png.pngtree.com/png-vector/20211031/ourmid/pngtree-muslim-man-praying-png-image_4016751.png" alt="Muslim praying" width="300" />
+<img src="https://w7.pngwing.com/pngs/47/795/png-transparent-islamic-prayer-silhouette-female-woman-religion-holy-faith-allah-head-cover.png" alt="Muslim praying" width="300" />
 
 ## Description
 
