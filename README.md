@@ -1,6 +1,6 @@
 # SMS-Prayer-Reminder
 
-![Sujood](https://media.istockphoto.com/id/953738536/vector/man-praying-on-knees-communicating-with-god-with-eyes-closed.jpg?s=612x612&w=0&k=20&c=pNh3_egftWMheFUieUtYEGybUjbBIMuqeMzBuyjY8WU=)
+<img src="https://png.pngtree.com/png-vector/20210309/ourmid/pngtree-ramadan-prayer-png-png-image_3025685.jpg" alt="Muslim praying" width="300" />
 
 ## Description
 
