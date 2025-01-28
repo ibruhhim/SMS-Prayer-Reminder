@@ -1,6 +1,6 @@
 # SMS-Prayer-Reminder
 
-<img src="https://png.pngtree.com/png-vector/20210309/ourmid/pngtree-ramadan-prayer-png-png-image_3025685.jpg" alt="Muslim praying" width="300" />
+<img src="https://png.pngtree.com/png-vector/20211031/ourmid/pngtree-muslim-man-praying-png-image_4016751.png" alt="Muslim praying" width="300" />
 
 ## Description
 
