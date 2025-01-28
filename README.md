@@ -1,6 +1,6 @@
 # SMS-Prayer-Reminder
 
-![Sujood](https://i.pinimg.com/474x/ee/19/15/ee19155b1a520dfbb5ddf937eceed6ec.jpg)
+![Sujood](https://media.istockphoto.com/id/953738536/vector/man-praying-on-knees-communicating-with-god-with-eyes-closed.jpg?s=612x612&w=0&k=20&c=pNh3_egftWMheFUieUtYEGybUjbBIMuqeMzBuyjY8WU=)
 
 ## Description
 
