@@ -1,6 +1,6 @@
 # SMS-Prayer-Reminder
 
-![Sujood](https://png.pngtree.com/png-clipart/20220319/ourmid/pngtree-muslims-praying-png-image_4500038.png)
+![Sujood](https://img.freepik.com/premium-psd/muslim-praying-silhouette-png_679658-10606.jpg)
 
 ## Description
 
