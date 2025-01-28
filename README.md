@@ -1,6 +1,6 @@
 # SMS-Prayer-Reminder
 
-![Sujood](https://img.freepik.com/premium-psd/muslim-praying-silhouette-png_679658-10606.jpg)
+![Sujood](https://i.pinimg.com/474x/ee/19/15/ee19155b1a520dfbb5ddf937eceed6ec.jpg)
 
 ## Description
 
